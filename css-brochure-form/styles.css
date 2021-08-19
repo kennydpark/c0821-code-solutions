@@ -9,14 +9,15 @@
 .heading {
   color: #ec5d57;
   font-weight: 500;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: sans-serif;
+  letter-spacing: 1px;
   font-size: 1.4rem;
   margin-bottom: 24px;
   text-align: center;
 }
 
 p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: sans-serif;
   color: #545454;
   font-weight: 550;
   font-size: 0.8rem;
