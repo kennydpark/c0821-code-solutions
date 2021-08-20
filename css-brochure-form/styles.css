@@ -1,0 +1,76 @@
+#box {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+
+.heading {
+  color: #ec5d57;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #545454;
+  line-height: 1px;
+  padding-left: 10px;
+}
+
+input {
+  border-color: lightgray;
+  border-style: solid;
+  border-radius: 7px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+input::placeholder {
+  color: #c5c5c5;
+  font-size: 1rem;
+}
+
+select {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #676767;
+  border-color: lightgray;
+  background-color: #f3f3f3;
+  border-style: solid;
+  border-radius: 7px;
+  width: 100%;
+  padding: 12px 1px;
+  border-width: 2px;
+}
+
+h1 {
+  font-family: 'Brandon Grotesque', sans-serif;
+}
+
+.submit {
+  background-color: #ec5d57;
+  margin-top: 10px;
+  padding: 8px 22px;
+  border-style: none;
+  border-radius: 40px;
+  color: aliceblue;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+#submit {
+  text-align: right;
+  padding-top: 1px;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
