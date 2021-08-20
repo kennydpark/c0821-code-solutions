@@ -1,8 +1,6 @@
 #box {
   display: flex;
   justify-content: center;
-  border: white;
-  border-width: 100px;
   padding-left: 100px;
 }
 
