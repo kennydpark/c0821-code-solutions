@@ -6,20 +6,12 @@ body {
   width: 85%;
   margin: auto;
   text-align: center;
-
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: black; */
 }
 
 .header {
   width: 65%;
   margin: auto;
   padding-top: 40px;
-
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: black; */
 }
 
 h1 {
@@ -45,28 +37,16 @@ p {
 
 .row-full {
   display: flex;
-
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: black; */
 }
 
 .column-one-half {
   text-align: center;
   margin: 20px;
   margin-bottom: 24px;
-
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: black; */
 }
 
 .column-one-fourth {
   text-align: left;
-
-  /* border-width: 1px;
-  border-style: solid;
-  border-color: black; */
   width: 60%;
 }
 
@@ -95,12 +75,3 @@ button {
   height: 36px;
   width: 19%;
 }
-
-
-
-/* visible border
-
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-*/
