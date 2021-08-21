@@ -33,7 +33,7 @@ p {
 
 .row-full {
   display: flex;
-  border-width: 3px;
+  border-width: 1px;
   border-style: solid;
   border-color: black;
 }
