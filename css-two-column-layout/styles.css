@@ -3,54 +3,71 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: auto;
   text-align: center;
-  border-width: 1px;
+
+  /* border-width: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
 }
 
 .header {
-  width: 70%;
+  width: 65%;
   margin: auto;
   padding-top: 40px;
-  border-width: 1px;
+
+  /* border-width: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
 }
 
 h1 {
   letter-spacing: 4px;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+h4 {
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: gray;
   font-weight: 500;
+  line-height: 21px;
+  margin-top: 5px;
 }
 
 .row-full {
   display: flex;
-  border-width: 1px;
+
+  /* border-width: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
 }
 
 .column-one-half {
   text-align: center;
-  margin: 30px;
-  border-width: 1px;
+  margin: 20px;
+  margin-bottom: 24px;
+
+  /* border-width: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
 }
 
 .column-one-fourth {
   text-align: left;
-  border-width: 1px;
+
+  /* border-width: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
+  width: 60%;
 }
 
 .row-one-half {
@@ -64,4 +81,26 @@ p {
 img {
   width: 100px;
   height: 100px;
+  padding-right: 5px;
 }
+
+button {
+  font-family: 'Karla', sans-serif;
+  background-color: white;
+  border-color: #d14b45;
+  border-style: solid;
+  color: #d14b45;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  height: 36px;
+  width: 19%;
+}
+
+
+
+/* visible border
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+*/
