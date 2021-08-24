@@ -8,7 +8,7 @@ body {
   text-align: center;
 }
 
-.header {
+.column-full {
   width: 65%;
   margin: auto;
   padding-top: 40px;
@@ -35,7 +35,7 @@ p {
   margin-top: 5px;
 }
 
-.row-full {
+.row {
   display: flex;
 }
 
@@ -50,10 +50,6 @@ p {
   width: 60%;
 }
 
-.row-one-half {
-  display: flex;
-}
-
 .column-two-third {
   width: 25%;
 }
@@ -62,6 +58,10 @@ img {
   width: 100px;
   height: 100px;
   padding-right: 5px;
+}
+
+.row-footer {
+  justify-content: center;
 }
 
 button {
