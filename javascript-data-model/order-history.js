@@ -50,3 +50,6 @@ var orderHistory = [
 ];
 
 console.log('value of orderHistory:', orderHistory);
+console.log('value of fourth order\'s second item array:', orderHistory[3].items[1]);
+console.log('value of fourth order\'s second item\'s itemCost property:', orderHistory[3].items[1].itemCost);
+console.log('value of fourth order\'s first item\'s returnWindowClosed property:', orderHistory[3].items[0].returnWindowClosed);
