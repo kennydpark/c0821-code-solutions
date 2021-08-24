@@ -25,7 +25,7 @@ function getFirstName(person) {
 
 var fullName = {
   firstName: 'Kenny',
-  lastName: 'Lamperouge'
+  lastName: 'Park'
 };
 
 var getFirstNameResult = getFirstName(fullName);
