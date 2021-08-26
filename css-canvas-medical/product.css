@@ -9,20 +9,15 @@
   height: 70px;
 }
 
-.column-full {
+.column-header {
   width: 100%;
+  margin: auto;
   display: flex;
 }
 
-.margin-auto {
-  margin: auto;
-}
-
 .column-nav {
-  width: 100%;
-}
-
-.nav-styling {
+  width: 120%;
+  position: relative;
   color: #b3b3b3;
   font-size: 0.8rem;
   font-weight: bolder;
@@ -68,10 +63,14 @@
   margin: auto;
   margin-top: 70px;
   margin-bottom: 70px;
-  background-image: url('images/hero.jpg');
+  background-image: url('images/product/product-header.jpg');
   background-size: cover;
   position: relative;
   height: 523px;
+}
+
+.display-flex {
+  display: flex;
 }
 
 .column-hero {
@@ -96,13 +95,14 @@
 
 .hero-paragraph {
   line-height: 1.7;
+  font-weight: lighter;
   margin-top: 0;
   position: relative;
   bottom: 10px;
 }
 
 .overlay {
-  background-color: rgba(59, 59, 59, 0.432);
+  background-color: rgba(95, 95, 95, 0.342);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -120,17 +120,31 @@
   top: 10px;
 }
 
-.row-clinicians {
-  background-color: #fafafa;
+.command {
   color: #6e6e6e;
-  border-bottom: 2px solid rgb(240, 240, 240);
+  height: 705px;
+
+  /* border-bottom: 2px solid rgb(240, 240, 240); */
 }
 
-.column-clinicians {
-  width: 87%;
-  margin: auto;
-  text-align: center;
-  height: 493px;
+.column-image-1 {
+  margin-right: 60px;
+}
+
+.column-command {
+  position: relative;
+  top: 105px;
+}
+
+.light-grey-background {
+  background-color: #fafafa;
+}
+
+.product-image-1 {
+  width: auto;
+  height: 90%;
+  position: relative;
+  top: 65px;
 }
 
 .column-clinicians-inner-top {
@@ -148,8 +162,22 @@
   line-height: 1.8;
 }
 
-p {
-  font-weight: bold;
+/* font styling */
+
+.font-lighter {
+  font-weight: lighter;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.line-height {
+  line-height: 1.5rem;
+}
+
+.line-height-quote {
+  line-height: 1.2rem;
 }
 
 .row-clinicians-inner-bottom {
@@ -273,6 +301,11 @@ p {
   font-size: 18px;
 }
 
+.width-87 {
+  width: 87%;
+  margin: auto;
+}
+
 .font-avenir {
   font-family: 'Avenir', sans-serif;
 }
@@ -287,4 +320,8 @@ p {
 
 .white {
   color: white;
+}
+
+.blue {
+  color: #294364;
 }
