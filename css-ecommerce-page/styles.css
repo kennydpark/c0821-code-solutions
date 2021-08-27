@@ -6,6 +6,7 @@
 
 .row {
   text-align: center;
+  display: flex;
 }
 
 .display-flex {
@@ -24,6 +25,12 @@ img {
 
 .column-half {
   height: 20px;
+}
+
+/* utility                                               */
+
+.text-center {
+  text-align: center;
 }
 
 .peach {
