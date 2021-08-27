@@ -11,6 +11,9 @@
 
 .column-full {
   width: 100%;
+}
+
+.display-flex {
   display: flex;
 }
 
@@ -34,7 +37,7 @@
 }
 
 .column-logo {
-  width: 450%;
+  margin-right: 400px;
   text-align: left;
 }
 
@@ -63,7 +66,7 @@
   padding-right: 9px;
 }
 
-.row-hero {
+.hero-full {
   width: 87%;
   margin: auto;
   margin-top: 70px;
@@ -74,30 +77,26 @@
   height: 523px;
 }
 
-.column-hero {
+.column {
   width: 48%;
+}
+
+.hero-text {
   position: relative;
   left: 75px;
   height: 100%;
+  padding-top: 80px;
 }
 
 .hero-header {
-  position: absolute;
-  top: 40px;
   font-size: 2.4rem;
   font-weight: lighter;
-  margin-top: 25px;
+  margin-top: 0;
   margin-bottom: 0;
-}
-
-.row-hero-inner {
-  height: 190px;
 }
 
 .hero-paragraph {
   line-height: 1.7;
-  margin-top: 0;
-  position: relative;
   bottom: 10px;
 }
 
