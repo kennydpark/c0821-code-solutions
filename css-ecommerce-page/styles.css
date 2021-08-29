@@ -5,11 +5,6 @@
 }
 
 .row {
-  text-align: center;
-  display: flex;
-}
-
-.display-flex {
   display: flex;
 }
 
@@ -18,19 +13,17 @@ img {
   width: auto;
 }
 
-.column {
-  width: 100%;
+.column-fifth {
+  width: 20%;
   margin: 10px;
 }
 
-.column-half {
+.description {
   height: 20px;
 }
 
-/* utility                                               */
-
 .text-center {
-  text-align: center;
+  justify-content: center;
 }
 
 .peach {
