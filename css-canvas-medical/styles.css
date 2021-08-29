@@ -77,15 +77,12 @@
   height: 523px;
 }
 
-.column {
-  width: 48%;
-}
-
 .hero-text {
   position: relative;
   left: 75px;
   height: 100%;
   padding-top: 80px;
+  width: 48%;
 }
 
 .hero-header {
@@ -119,31 +116,31 @@
   top: 10px;
 }
 
-.row-clinicians {
+.clinicians-full {
   background-color: #fafafa;
   color: #6e6e6e;
   border-bottom: 2px solid rgb(240, 240, 240);
 }
 
-.column-clinicians {
+.clinicians-inner {
   width: 87%;
   margin: auto;
   text-align: center;
   height: 493px;
 }
 
-.column-clinicians-inner-top {
+.clinicians-header-full {
   width: 45%;
   margin: auto;
   margin-top: 40px;
 }
 
-.row-clinicians-header-top {
+.clinicians-header-top {
   font-size: 0.9rem;
   padding-top: 42px;
 }
 
-.row-clinicians-header-bottom {
+.clinicians-header-bottom {
   line-height: 1.8;
 }
 
@@ -151,35 +148,35 @@ p {
   font-weight: bold;
 }
 
-.row-clinicians-inner-bottom {
+.clinicians-inner-bottom {
   display: flex;
   margin-top: 60px;
   font-size: 13px;
   line-height: 1.9;
 }
 
-.column-all-locations {
+.all-locations {
   flex-basis: calc(100% / 2);
 }
 
-.column-ready-full {
+.learn-more-inner {
   display: flex;
   width: 87%;
   margin: auto;
   height: 100%;
 }
 
-.column-ready-half {
+.ready-left {
   width: 290%;
 }
 
-.column-get-started {
+.learn-more-get-started {
   width: 100%;
   text-align: right;
   position: relative;
 }
 
-.get-started {
+.get-started-button {
   background-color: #294364;
   border-radius: 4px;
   border-style: none;
@@ -192,7 +189,7 @@ p {
   right: 28px;
 }
 
-.row-learn-more {
+.learn-more-full {
   height: 162px;
   color: #6e6e6e;
   font-size: 15px;
@@ -202,19 +199,19 @@ p {
   padding-top: 20px;
 }
 
-.row-info-full {
+.info-full {
   background-color: #515351;
   height: 432px;
 }
 
-.column-info-inner {
+.info-inner {
   width: 87%;
   margin: auto;
   display: flex;
   height: 100%;
 }
 
-.column-one-third-left {
+.info-left {
   width: 210%;
 }
 
@@ -228,7 +225,7 @@ p {
   height: 27px;
 }
 
-.row-address {
+.address {
   line-height: 0.8;
   position: relative;
   top: 35px;
@@ -239,12 +236,12 @@ p {
   line-height: 1.4;
 }
 
-.row-product {
+.info-product {
   margin-top: 102px;
   line-height: 1.4;
 }
 
-.row-footer {
+.footer-height {
   height: 128px;
 }
 
@@ -255,7 +252,7 @@ p {
   margin: auto;
 }
 
-.column-footer-nav {
+.footer-nav {
   width: 16%;
   color: #6e6e6e;
 }
