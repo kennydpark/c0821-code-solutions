@@ -1,0 +1,95 @@
+button {
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.open-modal {
+  background-color: #4a4ae9;
+  width: 230px;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.open-modal-text {
+  margin: 10px 0;
+}
+
+.row {
+  border: 0.5px dotted lightgrey;
+}
+
+.column {
+  border: 0.5px dotted white;
+}
+
+.dialog {
+  position: relative;
+  width: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question {
+  margin: 30px 0;
+}
+
+.modal-no {
+  background-color: #eb5d5d;
+  width: 120px;
+}
+
+.text-no {
+  margin: 10px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.modal-full {
+  text-align: center;
+  position: relative;
+  top: 100px;
+  width: 50%;
+  margin: auto;
+}
+
+.modal-window {
+  border-radius: 5px;
+}
+
+.off {
+  background-color: white;
+  color: white;
+}
+
+.on {
+  color: black;
+}
+
+.button-off {
+  background-color: white;
+  color: white;
+}
+
+.button-on {
+  background-color: #eb5d5d;
+  color: white;
+}
+
+.modal-window-off {
+  box-shadow: none;
+}
+
+.modal-window-on {
+  border-radius: 5px;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.766);
+}
