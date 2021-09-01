@@ -2,9 +2,7 @@
 function lastChars(length, string) {
   var output = '';
   for (var i = 0; i < string.length; i++) {
-    if (i < (string.length - length)) {
-      continue;
-    } else {
+    if (i > ((string.length - 1) - length)) {
       output += string[i];
     }
   }

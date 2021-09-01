@@ -7,7 +7,7 @@ function truncate(length, string) {
   for (var i = 0; i < length; i++) {
     if (length <= string.length) {
       output += string[i];
-    } else if (length > string.length) {
+    } else {
       length = string.length;
       output += string[i];
     }
