@@ -16,9 +16,6 @@ function tabClick(event) {
     }
   }
 
-  if (!event.target.matches('.tab')) {
-    return;
-  }
   var dataView = event.target.getAttribute('data-view');
 
   for (var x = 0; x < allView.length; x++) {
