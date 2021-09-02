@@ -3,7 +3,7 @@ var i = 0;
 $eachChar[i].className = 'next';
 
 document.addEventListener('keydown', function (event) {
-  if (event.key === $eachChar[i].innerHTML) {
+  if (event.key === $eachChar[i].textContent) {
     $eachChar[i].className = 'green';
     i++;
     $eachChar[i].className = 'next';

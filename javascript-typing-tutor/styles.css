@@ -51,11 +51,3 @@ button {
 .dialog-on {
   display: flex;
 }
-
-.score-off {
-  display: none;
-}
-
-.score-on {
-  display: flex;
-}
