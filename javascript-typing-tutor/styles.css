@@ -1,0 +1,60 @@
+h1 {
+  font-size: 3rem;
+  font-family: monospace;
+}
+
+button {
+  border-radius: 5px;
+  background-color: rgb(33, 129, 189);
+  color: rgb(220, 229, 233);
+  border-style: none;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+}
+
+.text-center {
+  justify-content: center;
+}
+
+.margin-top {
+  margin-top: 150px;
+}
+
+.off {
+  color: black;
+}
+
+.next {
+  color: black;
+  border-bottom: solid 2px black;
+}
+
+.green {
+  color: rgb(34, 212, 34);
+}
+
+.red {
+  color: red;
+  border-bottom: solid 2px red;
+}
+
+.dialog-off {
+  display: none;
+}
+
+.dialog-on {
+  display: flex;
+}
+
+.score {
+  position: fixed;
+  top: 60px;
+}
