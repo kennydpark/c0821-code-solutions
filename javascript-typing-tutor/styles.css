@@ -12,6 +12,7 @@ button {
   height: 50px;
   width: 150px;
   cursor: pointer;
+  margin-top: 50px;
 }
 
 .row {
@@ -23,7 +24,7 @@ button {
 }
 
 .margin-top {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .off {
@@ -50,4 +51,9 @@ button {
 
 .dialog-on {
   display: flex;
+}
+
+.score {
+  position: fixed;
+  top: 60px;
 }
