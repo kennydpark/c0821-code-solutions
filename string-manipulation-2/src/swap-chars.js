@@ -1,14 +1,27 @@
 /* exported swapChars */
+
 function swapChars(firstIndex, secondIndex, string) {
-  var array = string.split('');
-  array.splice(firstIndex, 1, string[secondIndex]);
-  array.splice(secondIndex, 1, string[firstIndex]);
-  return array.join('');
+  var output = '';
+  for (var i = 0; i < string.length; i++) {
+    if (i === firstIndex) {
+      output += string[secondIndex];
+    } else if (i === secondIndex) {
+      output += string[firstIndex];
+    } else {
+      output += string[i];
+    }
+  }
+  return output;
 }
 
 // input: number, number, string
 // output: string
-// create storage for string turned into an array, called array
-// use splice method to start at firstIndex value index, delete 1, then add string at value of secondIndex as index
-// use splice method to start at secondIndex value index, delete 1, then add string at value of firstIndex as index
-// return the array turned into a string without commas
+// create storage for output: empty string
+// look at each char of string one at a time
+//    if 'i' strictly equals value of firstIndex,
+//        add value of string at secondIndex to output
+//    otherwise, if 'i' strictly equals secondIndex,
+//        add value of string at firstIndex to output
+//    otherwise,
+//        add value of string at 'i' to output
+// return output
