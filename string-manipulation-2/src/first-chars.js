@@ -1,9 +1,7 @@
 /* exported firstChars */
 function firstChars(length, string) {
   var output = '';
-  if (string === '') {
-    output += '';
-  } else if (length > string.length) {
+  if (length > string.length) {
     length = string.length;
   }
   for (var i = 0; i < length; i++) {
