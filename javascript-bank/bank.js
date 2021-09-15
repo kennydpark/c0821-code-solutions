@@ -7,13 +7,12 @@ function Bank() {
 Bank.prototype.openAccount = function (holder, balance) {
   if ((balance <= 0) || (typeof balance !== 'number') || (isNaN(balance)) || (!(Number.isInteger(balance)))) {
     return null;
-  } else if (balance > 0) {
-    var newAccount = new Account(this.nextAccountNumber, holder);
-    newAccount.deposit(balance);
-    this.accounts.push(newAccount);
-    this.nextAccountNumber++;
-    return newAccount.number;
   }
+  var newAccount = new Account(this.nextAccountNumber, holder);
+  newAccount.deposit(balance);
+  this.accounts.push(newAccount);
+  this.nextAccountNumber++;
+  return newAccount.number;
 };
 
 Bank.prototype.getAccount = function (number) {
