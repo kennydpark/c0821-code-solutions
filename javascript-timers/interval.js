@@ -8,9 +8,3 @@ function countDown() {
 }
 
 var interval = setInterval(countDown, 1000);
-
-window.addEventListener('load', refresh);
-
-function refresh(event) {
-  return interval;
-}
