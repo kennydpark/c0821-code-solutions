@@ -5,24 +5,42 @@ function Account(number, holder) {
   this.transactions = [];
 }
 
+// Account.prototype.deposit = function (amount) {
+//   if ((amount <= 0) || (typeof amount !== 'number') || (isNaN(amount)) || (!(Number.isInteger(amount)))) {
+//     return false;
+//   } else if (amount > 0) {
+//     var newTransaction = new Transaction('deposit', amount);
+//     this.transactions.push(newTransaction);
+//     return true;
+//   }
+// };
+
 Account.prototype.deposit = function (amount) {
   if ((amount <= 0) || (typeof amount !== 'number') || (isNaN(amount)) || (!(Number.isInteger(amount)))) {
     return false;
-  } else if (amount > 0) {
-    var newTransaction = new Transaction('deposit', amount);
-    this.transactions.push(newTransaction);
-    return true;
   }
+  var newTransaction = new Transaction('deposit', amount);
+  this.transactions.push(newTransaction);
+  return true;
 };
+
+// Account.prototype.withdraw = function (amount) {
+//   if ((amount <= 0) || (typeof amount !== 'number') || (isNaN(amount)) || (!(Number.isInteger(amount)))) {
+//     return false;
+//   } else if (amount > 0) {
+//     var newTransaction = new Transaction('withdrawal', amount);
+//     this.transactions.push(newTransaction);
+//     return true;
+//   }
+// };
 
 Account.prototype.withdraw = function (amount) {
   if ((amount <= 0) || (typeof amount !== 'number') || (isNaN(amount)) || (!(Number.isInteger(amount)))) {
     return false;
-  } else if (amount > 0) {
-    var newTransaction = new Transaction('withdrawal', amount);
-    this.transactions.push(newTransaction);
-    return true;
   }
+  var newTransaction = new Transaction('withdrawal', amount);
+  this.transactions.push(newTransaction);
+  return true;
 };
 
 Account.prototype.getBalance = function () {
