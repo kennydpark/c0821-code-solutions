@@ -9,6 +9,7 @@ var imageTwoUrl = 'images/004.png';
 var imageThreeUrl = 'images/007.png';
 var imageFourUrl = 'images/025.png';
 var imageFiveUrl = 'images/039.png';
+var imageUrlArray = [imageOneUrl, imageTwoUrl, imageThreeUrl, imageFourUrl, imageFiveUrl];
 
 $arrowNext.addEventListener('click', goNext);
 function goNext(event) {
@@ -63,22 +64,25 @@ function circleClick(event) {
       $allCircles[i].setAttribute('class', 'far fa-circle circle-one');
     }
   }
-  if (event.target === $allCircles[0]) {
-    $imageElement.setAttribute('src', imageOneUrl);
-    position = 1;
-  } else if (event.target === $allCircles[1]) {
-    $imageElement.setAttribute('src', imageTwoUrl);
-    position = 2;
-  } else if (event.target === $allCircles[2]) {
-    $imageElement.setAttribute('src', imageThreeUrl);
-    position = 3;
-  } else if (event.target === $allCircles[3]) {
-    $imageElement.setAttribute('src', imageFourUrl);
-    position = 4;
-  } else {
-    $imageElement.setAttribute('src', imageFiveUrl);
-    position = 5;
-  }
+  // if (event.target === $allCircles[0]) {
+  //   $imageElement.setAttribute('src', imageOneUrl);
+  //   position = 1;
+  // } else if (event.target === $allCircles[1]) {
+  //   $imageElement.setAttribute('src', imageTwoUrl);
+  //   position = 2;
+  // } else if (event.target === $allCircles[2]) {
+  //   $imageElement.setAttribute('src', imageThreeUrl);
+  //   position = 3;
+  // } else if (event.target === $allCircles[3]) {
+  //   $imageElement.setAttribute('src', imageFourUrl);
+  //   position = 4;
+  // } else {
+  //   $imageElement.setAttribute('src', imageFiveUrl);
+  //   position = 5;
+  // }
+  // for (var i = 0; i < imageUrlArray.length; i++) {
+  //   if (event.target === )
+  // }
   intervalID = setInterval(autoSwitch, 3000);
 }
 
