@@ -15,12 +15,9 @@ function firstChars(length, string) {
 // intput: length (number), string
 // output string
 // create storage for output: empty string
+// if 'length' is greater than the length of 'string',
+// set value of 'length' to the length of 'string'.
 // look at each char of string one at a time
-//    if length is less than or equal to length of string,
-//        add value of string at i to output and assign result to output
-//    otherwise, if string strictly equals '',
-//        add '' to output and assign result to output
-//    othwerise, if length is greater than length of string,
-//        assign length of string to length
+//    if length is less than or equal to the length of string,
 //        add value of string at i to output and assign result to output
 // return output
