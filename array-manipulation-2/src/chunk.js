@@ -75,15 +75,25 @@
 
 function chunk(array, size) {
   var output = [];
+  var initialSize = size;
   var start = 0;
-  // var end = size;
   for (var i = start; i < array.length; i++) {
-    if (size <= array.length + 1) {
+    if (size <= array.length) {
       output.push(array.slice(start, size));
       start = size;
-      size += size;
+      size += initialSize;
+      if (size > array.length + 1) {
+        output.push(array.slice(start, size));
+      }
     }
-
   }
+  // for (var n = 0; n < output.length; n++) {
+  //   if (output[n].length === 0) {
+
+  //   }
   return output;
 }
+
+// input: array, size(integer)
+// output: new array
+// create storage for
