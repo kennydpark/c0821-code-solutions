@@ -1,6 +1,6 @@
 var $userList = document.querySelector('#user-list');
 
-function getUserName(name) {
+function getUserName() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
   xhr.responseType = 'json';
