@@ -41,16 +41,10 @@ function positionOfImage() {
       $allCircles[i].setAttribute('class', 'far fa-circle circle-one');
     }
   }
-  if (position === 1) {
-    $imageElement.setAttribute('src', imageOneUrl);
-  } else if (position === 2) {
-    $imageElement.setAttribute('src', imageTwoUrl);
-  } else if (position === 3) {
-    $imageElement.setAttribute('src', imageThreeUrl);
-  } else if (position === 4) {
-    $imageElement.setAttribute('src', imageFourUrl);
-  } else {
-    $imageElement.setAttribute('src', imageFiveUrl);
+  for (var n = 0; n < imageUrlArray.length; n++) {
+    if ((position - 1) === n) {
+      $imageElement.setAttribute('src', imageUrlArray[n]);
+    }
   }
 }
 
@@ -60,29 +54,12 @@ function circleClick(event) {
   for (var i = 0; i < $allCircles.length; i++) {
     if (event.target === $allCircles[i]) {
       $allCircles[i].setAttribute('class', 'fas fa-circle circle-one');
+      position = (i + 1);
+      positionOfImage();
     } else {
       $allCircles[i].setAttribute('class', 'far fa-circle circle-one');
     }
   }
-  // if (event.target === $allCircles[0]) {
-  //   $imageElement.setAttribute('src', imageOneUrl);
-  //   position = 1;
-  // } else if (event.target === $allCircles[1]) {
-  //   $imageElement.setAttribute('src', imageTwoUrl);
-  //   position = 2;
-  // } else if (event.target === $allCircles[2]) {
-  //   $imageElement.setAttribute('src', imageThreeUrl);
-  //   position = 3;
-  // } else if (event.target === $allCircles[3]) {
-  //   $imageElement.setAttribute('src', imageFourUrl);
-  //   position = 4;
-  // } else {
-  //   $imageElement.setAttribute('src', imageFiveUrl);
-  //   position = 5;
-  // }
-  // for (var i = 0; i < imageUrlArray.length; i++) {
-  //   if (event.target === )
-  // }
   intervalID = setInterval(autoSwitch, 3000);
 }
 
@@ -102,14 +79,10 @@ function autoSwitch() {
       $allCircles[i].setAttribute('class', 'far fa-circle circle-one');
     }
   }
-  if (position === 2) {
-    $imageElement.setAttribute('src', imageTwoUrl);
-  } else if (position === 3) {
-    $imageElement.setAttribute('src', imageThreeUrl);
-  } else if (position === 4) {
-    $imageElement.setAttribute('src', imageFourUrl);
-  } else if (position === 5) {
-    $imageElement.setAttribute('src', imageFiveUrl);
+  for (var n = 0; n < imageUrlArray.length; n++) {
+    if ((position - 1) === n) {
+      $imageElement.setAttribute('src', imageUrlArray[n]);
+    }
   }
   if (position > 5) {
     position = 1;
