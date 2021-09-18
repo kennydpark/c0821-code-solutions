@@ -96,4 +96,13 @@ function chunk(array, size) {
 
 // input: array, size(integer)
 // output: new array
-// create storage for
+// create storage for output, empty array
+// create storage for original size value
+// create storage for original start value
+// look at each item in the array one at a time
+// if size is less than or equal to length of array,
+//    return the array from start to size and push it to output
+//    set start equal to size
+//    add the original size to size and assign it to size
+//    if size is greater than the length of array plus 1,
+//        return the array from
