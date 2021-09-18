@@ -82,15 +82,11 @@ function chunk(array, size) {
       output.push(array.slice(start, size));
       start = size;
       size += initialSize;
-      if (size > array.length + 1) {
+      if (size > array.length) {
         output.push(array.slice(start, size));
       }
     }
   }
-  // for (var n = 0; n < output.length; n++) {
-  //   if (output[n].length === 0) {
-
-  //   }
   return output;
 }
 
