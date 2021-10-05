@@ -1,0 +1,666 @@
+    1  exit
+    2  whoami
+    3  git config --global user.name "Kenny Park"
+    4  git config --global user.email "kennyparc@gmail.com"
+    5  git config --global --list
+    6  exit
+    7  http http://www.example.com
+    8  http --verbose http://www.example.com
+    9  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   10  ls
+   11  cd ~/repos
+   12  ls
+   13  cd c0821-code-solutions/
+   14  cd http-messages
+   15  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   16  http --body GET https://example.com > index.html
+   17  git status
+   18  cd ..
+   19  git status
+   20  git add http-messages
+   21  git commit -m "Completed http-messages exercise."
+   22  git push origin http-messages
+   23  git switch master
+   24  git pull origin master
+   25  git branch javascript-ajax
+   26  git switch javascript-ajax
+   27  git status
+   28  git add javascript-ajax
+   29  git commit -m "Completed javascript-ajax exercise."
+   30  git push origin javascript-ajax
+   31  git status
+   32  git add javascript-ajax
+   33  git commit -m "removed unnecessary parameter in function"
+   34  git push origin javascript-ajax
+   35  git status
+   36  git switch master
+   37  cd ~/repos
+   38  ls
+   39  cd c0821-code-solutions/
+   40  git switch array-manipulation-2
+   41  git switch object-manipulation-2
+   42  git add array-manipulation-2/
+   43  git commit -m "in progress"
+   44  git switch object-manipulation-2
+   45  cd ~/repos
+   46  ls
+   47  cd code-journal/
+   48  git branch --list
+   49  git switch issue-3-edit-entry
+   50  git status
+   51  git add js/main.js 
+   52  git status
+   53  git commit -m "replaced CSS.escape method with just the value of the property."
+   54  git push origin issue-3-edit-entry
+   55  git switch master
+   56  git pull origin master
+   57  cd ~/repos
+   58  ls
+   59  cd c0821-code-solutions/
+   60  git switch array-manipulation-2
+   61  git switch object-manipulation-2
+   62  git add array-manipulation-2/
+   63  git commit -m "in progress"
+   64  git switch object-manipulation-2
+   65  git switch master
+   66  cd ~/repos
+   67  ls
+   68  cd code-journal/
+   69  git branch issue-4-delete-entry
+   70  git branch --list
+   71  git switch issue-4-delete-entry 
+   72  git status
+   73  git add css/styles.css index.html js/main.js 
+   74  git status
+   75  git commit -m "Add a click target for deleting an entry to the entry form that only appears if the user is editing an entry. #4"
+   76  git push origin issue-4-delete-entry 
+   77  git status
+   78  git add css/layout.css css/styles.css index.html js/main.js 
+   79  git commit -m "Show a confirmation modal when the user clicks the Delete Entry click target. #4"
+   80  git status
+   81  git add js/main.js 
+   82  git commit -m "Show a confirmation modal when the user clicks the Delete Entry click target. #4"
+   83  git push origin issue-4-delete-entry 
+   84  git status
+   85  git add css/styles.css js/main.js 
+   86  git status
+   87  git commit -m "Hide the modal if the user clicks Cancel. #4"
+   88  git push origin issue-4-delete-entry 
+   89  git status
+   90  git add css/styles.css js/main.js 
+   91  git commit -m "Remove the entry from the data model and the entry's DOM tree from the page if the user clicks Delete. #4"
+   92  git push origin issue-4-delete-entry 
+   93  git status
+   94  git add js/main.js 
+   95  git commit -m "Show the Entries list if the user clicks Delete. #4"
+   96  git push origin issue-4-delete-entry 
+   97  git status
+   98  git add css/styles.css 
+   99  git commit -m "Remove all CSS styling that had no affect or was otherwise unnecessary. #4"
+  100  git push origin issue-4-delete-entry 
+  101  git status
+  102  git add js/main.js 
+  103  git commit -m "Test all functionality again in a private browsing session. #4"
+  104  git push origin issue-4-delete-entry 
+  105  git switch master
+  106  git status
+  107  git add css/styles.css 
+  108  git commit -m "don't know what changed, but I need to commit apparently."
+  109  git switch master
+  110  cd ~/repos
+  111  ls
+  112  exit
+  113  cd ~/repos
+  114  git clone git@github.com:kennydpark/ajax-project.git
+  115  cd ajax-project
+  116  npm ci
+  117  git pull origin master
+  118  git branch issue-1-search-movie
+  119  git switch issue-1-search-movie
+  120  git status
+  121  git add css/layout.css css/styles.css index.html images/background-image.jpeg images/rotated-background-image.jpg 
+  122  git status
+  123  git commit -m "Create the general layout of the wireframe in html and css. #1"
+  124  git push origin issue-1-search-movie
+  125  git status
+  126  git add css/layout.css css/styles.css index.html 
+  127  git status
+  128  git add images/final-background-image.png 
+  129  git status
+  130  git commit -m "Ensure the background image is fixed properly. #1"
+  131  git push origin issue-1-search-movie 
+  132  git status
+  133  git add css/styles.css index.html js/data.js js/main.js 
+  134  git status
+  135  git commit -m "Ensure the value of the search is saved in the local storage and data model. #1"
+  136  git status
+  137  git add js/main.js 
+  138  git commit -m "Ensure the value of the search is saved in the local storage and data model. #1"
+  139  git push origin issue-1-search-movie 
+  140  git status
+  141  git add js/main.js 
+  142  git status
+  143  git commit -m "Ensure the value is used properly in the API request function. #1"
+  144  git add js/main.js 
+  145  git commit -m "Ensure the value is used properly in the API request function. #1"
+  146  git push origin issue-1-search-movie 
+  147  git status
+  148  git add css/styles.css 
+  149  git commit -m "Ensure mobile responsiveness. #1"
+  150  git push origin issue-1-search-movie 
+  151  git status
+  152  git add js/main.js 
+  153  git commit -m "Remove all console logs. #1"
+  154  git push origin issue-1-search-movie 
+  155  git status
+  156  git add css/styles.css 
+  157  git commit -m "Remove all CSS properties that have no effect. #1"
+  158  git push origin issue-1-search-movie 
+  159  git status
+  160  git add css/layout.css 
+  161  git commit -m "Confirm that the user interface looks natural on both mobile and desktop screens. #1"
+  162  git push origin issue-1-search-movie 
+  163  git status
+  164  git add css/styles.css 
+  165  git commit -m "Remove all CSS properties that have no effect. #1"
+  166  git push origin issue-1-search-movie 
+  167  git status
+  168  git add css/styles.css index.html 
+  169  git status
+  170  git commit -m "fixed positioning elements and background. #1"
+  171  git push origin issue-1-search-movie 
+  172  git status
+  173  git switch master
+  174  git pull origin master
+  175  git branch issue-2-search-results
+  176  git switch issue-2-search-results
+  177  git status
+  178  git add js/main.js 
+  179  git commit -m "Ensure that each search request is identified with a unique ID for the purpose of editing later. #2"
+  180  git add js/main.js 
+  181  git commit -m "Ensure that each search request is identified with a unique ID for the purpose of editing later. #2"
+  182  git push origin issue-2-search-results 
+  183  git status
+  184  git add css/layout.css css/styles.css index.html 
+  185  git status
+  186  git commit -m "Create a new data-view for the search results view. #2"
+  187  git status
+  188  git add css/styles.css index.html 
+  189  git commit -m "Create a new data-view for the search results view. #2"
+  190  git push origin issue-2-search-results 
+  191  git status
+  192  git add css/styles.css 
+  193  git commit -m "Ensure mobile responsiveness."
+  194  git commit --amend -m "Ensure mobile responsiveness. #2"
+  195  git push origin issue-2-search-results 
+  196  git status
+  197  git add css/styles.css index.html js/main.js 
+  198  git status
+  199  git commit -m "Ensure that previous search results are removed after a new one is done. #2"
+  200  git add js/main.js 
+  201  git commit -m "Ensure that previous search results are removed after a new one is done. #2"
+  202  git push origin issue-2-search-results 
+  203  git status
+  204  git add css/styles.css images/image-unavailable.jpg index.html js/main.js 
+  205  git status
+  206  git commit -m "Remove all console logs. #2"
+  207  git push origin issue-2-search-results 
+  208  git status
+  209  git add css/styles.css index.html js/main.js 
+  210  git commit -m "Create a message that describes which keyword the results are for. #2"
+  211  git push origin issue-2-search-results 
+  212  git status
+  213  git add css/styles.css js/main.js 
+  214  git commit -m "Confirm that the user interface looks natural on both mobile and desktop screens. #2"
+  215  git status
+  216  git add index.html 
+  217  git commit -m "removed commented out code. #2"
+  218  git push origin issue-2-search-results 
+  219  git status
+  220  git add css/styles.css js/data.js js/main.js 
+  221  git status
+  222  git commit -m "restructured functions for api requests.#2"
+  223  git push origin issue-2-search-results 
+  224  git status
+  225  git switch master
+  226  git pull origin master
+  227  git branch issue-3-view-details
+  228  git switch issue-3-view-details
+  229  git status
+  230  git add js/main.js 
+  231  git commit -m "Create a hidden text element in the search result cards for the imdbID. #3"
+  232  git push origin issue-3-view-details 
+  233  git status
+  234  git add css/styles.css index.html 
+  235  git commit -m "Create a new data-view for the detailed card. #9"
+  236  git push origin issue-3-view-details 
+  237  git status
+  238  git add css/layout.css css/styles.css index.html js/main.js 
+  239  git status
+  240  git commit -m "Create a dummy model for the DOM tree. #9"
+  241  git push origin issue-3-view-details 
+  242  git status
+  243  git add index.html js/main.js 
+  244  git commit -m "Create the function for rendering the DOM tree. #9"
+  245  git add index.html js/main.js 
+  246  git status
+  247  git commit -m "Create the function for rendering the DOM tree. #9"
+  248  git push origin issue-3-view-details 
+  249  git status
+  250  git add js/main.js 
+  251  git status
+  252  git commit -m "Ensure that the selected search result matches the detailed card via the imdbID. #9"
+  253  git push origin issue-3-view-details 
+  254  git status
+  255  git add css/layout.css index.html js/main.js 
+  256  git status
+  257  git commit -m "Create an event listener for selecting a search result card which will switch to the detailed card view. #9"
+  258  git add css/layout.css index.html js/main.js 
+  259  git status
+  260  git commit -m "Create an event listener for selecting a search result card which will switch to the detailed card view. #9"
+  261  git push origin issue-3-view-details 
+  262  git status
+  263  git add css/styles.css index.html js/main.js 
+  264  git status
+  265  git commit -m "Ensure that clicking the 'back' button takes the user back to the search results view. #9"
+  266  git push origin issue-3-view-details 
+  267  git status
+  268  git add css/layout.css css/styles.css index.html js/main.js 
+  269  git status
+  270  git commit -m "added placeholder for poster if it is N/A. #9"
+  271  git push origin issue-3-view-details 
+  272  git status
+  273  git add css/layout.css 
+  274  git commit -m "adjusted search result card sizes. #9"
+  275  git push origin issue-3-view-details 
+  276  git status
+  277  git add js/main.js 
+  278  git commit -m "cleaned up code for readability. #9"
+  279  git push origin issue-3-view-details 
+  280  git status
+  281  git switch master
+  282  git pull origin master
+  283  git branch issue-4-save-movie
+  284  git switch issue-4-save-movie 
+  285  git status
+  286  git add css/layout.css css/styles.css js/data.js js/main.js 
+  287  git status
+  288  git commit -m "Create event listeners for the buttons and text to visually react when selected, as described above. #3"
+  289  git push origin issue-4-save-movie 
+  290  git status
+  291  git add js/main.js 
+  292  git commit -m "Create storage for the data of the selected card. #3"
+  293  git push origin issue-4-save-movie 
+  294  git status
+  295  git add js/main.js 
+  296  git commit -m "Ensure that the data is pushed into the storage when the card is 'added'. #3"
+  297  git push origin issue-4-save-movie 
+  298  git status
+  299  git add js/main.js 
+  300  git commit -m "Remove all commented out code. #3"
+  301  git push origin issue-4-save-movie 
+  302  git status
+  303  git add .
+  304  git reset --hard head
+  305  git status
+  306  git add css/layout.css js/main.js 
+  307  git status
+  308  git commit -m "removed plus buttons on search result list. #3"
+  309  git push origin issue-4-save-movie 
+  310  git status
+  311  git add js/main.js 
+  312  git commit -m "removed commented out code. #3"
+  313  git push origin issue-4-save-movie 
+  314  git status
+  315  git add js/main.js 
+  316  git commit -m "changed the anonymous function in the event listener for saving data of added card. #3"
+  317  git push origin issue-4-save-movie 
+  318  git status
+  319  git add js/main.js 
+  320  git commit -m "applied the event listener for storing data of selected search result in the global scope. #3"
+  321  git push origin issue-4-save-movie 
+  322  git status
+  323  git switch master
+  324  git pull origin master
+  325  git branch issue-5-view-watchlist
+  326  git switch issue-5-view-watchlist 
+  327  git status
+  328  git add css/styles.css index.html js/main.js 
+  329  git status
+  330  git commit -m "Create data-view for the watchlist with the header and button to go back. #4"
+  331  git push origin issue-5-view-watchlist 
+  332  git status
+  333  git add index.html js/main.js 
+  334  git commit -m "Create the dummy DOM tree model. #4"
+  335  git push origin issue-5-view-watchlist 
+  336  git status
+  337  git add css/styles.css index.html js/main.js 
+  338  git commit -m "Ensure that the button to go back view swaps properly. #4"
+  339  git push origin issue-5-view-watchlist 
+  340  git status
+  341  git add index.html js/main.js 
+  342  git commit -m "Ensure that the button "View Watchlist" view swaps properly. #4"
+  343  git status
+  344  git commit -m "Ensure that the button "View Watchlist" view swaps properly. #4"
+  345  git commit -m "Ensure that the button 'View Watchlist' view swaps properly. #4"
+  346  git push origin issue-5-view-watchlist 
+  347  git status
+  348  git add index.html js/main.js 
+  349  git commit -m "Ensure that the anchor 'My Watchlist' in the top navigation area view swaps properly. #4"
+  350  git push origin issue-5-view-watchlist 
+  351  git status
+  352  git add css/layout.css css/styles.css index.html js/main.js 
+  353  git commit -m "Create the function for rendering the watchlist DOM tree. #4"
+  354  git push origin issue-5-view-watchlist 
+  355  git status
+  356  git add index.html js/data.js js/main.js 
+  357  git commit -m "Ensure that newly added cards appear in the watchlist. #4"
+  358  git push origin issue-5-view-watchlist 
+  359  git status
+  360  git add css/styles.css js/data.js js/main.js 
+  361  git commit -m "Ensure that the newly added cards appear in the watchlist without reloading. #4"
+  362  git push origin issue-5-view-watchlist 
+  363  git status
+  364  git add css/styles.css js/main.js 
+  365  git commit -m "Ensure that the added cards remain in the watchlist after reload. #4"
+  366  git status
+  367  git add index.html js/main.js 
+  368  git commit -m "If there are no cards in watchlist, display a text, 'Your Watchlist is currently empty.' #4"
+  369  git push origin issue-5-view-watchlist 
+  370  git status
+  371  git add css/styles.css index.html js/data.js js/main.js 
+  372  git status
+  373  git commit -m "Ensure that selected card in detailed view remains after reload. #4"
+  374  git push origin issue-5-view-watchlist 
+  375  git status
+  376  git add css/styles.css js/main.js 
+  377  git status
+  378  git commit -m "Ensure that a selected card that has already been added to Watchlist shows "In Watchlist". #4"
+  379  git commit -m "Ensure that a selected card that has already been added to Watchlist shows 'In Watchlist'. #4"
+  380  git push origin issue-5-view-watchlist 
+  381  git status
+  382  git add css/layout.css js/main.js 
+  383  git status
+  384  git commit -m "Remove all commented out code. #4"
+  385  git push origin issue-5-view-watchlist 
+  386  git status
+  387  git add js/main.js 
+  388  git commit -m "changed api http urls to https. #4"
+  389  git push origin issue-5-view-watchlist 
+  390  git status
+  391  git switch master
+  392  cd ~/repos
+  393  ls
+  394  cd c0821-code-solutions/
+  395  git pull origin master
+  396  cd ~/repos
+  397  ls
+  398  cd ajax-project/
+  399  git switch issue-5-view-watchlist 
+  400  git status
+  401  git add images/image-unavailable.jpg
+  402  git status
+  403  ls
+  404  cd images
+  405  ls
+  406  cd ..
+  407  git status
+  408  git add js/main.js
+  409  git status
+  410  git commit -m "moved condition blocks to functions that make more sense to contain it. #4"
+  411  git push origin issue-5-view-watchlist 
+  412  git status
+  413  git add js/main.js 
+  414  git commit -m "removed commented out code. #4"
+  415  git push origin issue-5-view-watchlist 
+  416  git status
+  417  git add js/main.js 
+  418  git status
+  419  git commit -m "fixed code that was deleting all of the watchlist cards after every search. #4"
+  420  git push origin issue-5-view-watchlist 
+  421  git status
+  422  git add js/main.js 
+  423  git status
+  424  git commit -m "changed variable name. #4"
+  425  git push origin issue-5-view-watchlist 
+  426  git status
+  427  git switch master
+  428  git pull origin master
+  429  git remote set-url origin git@github.com:kennydpark/movie-journal.git
+  430  cd ~/repos
+  431  mv ajax-project movie-journal
+  432  ls
+  433  cd movie-journal/
+  434  git branch project-polish
+  435  git switch project-polish
+  436  ls
+  437  git switch master
+  438  git pull origin master
+  439  git switch project-polish
+  440  git status
+  441  git add images/meta\ image.png index.html 
+  442  git status
+  443  git add images/favicon.ico 
+  444  git status
+  445  git commit -m "changed head icon and added meta content"
+  446  git push origin project-polish 
+  447  git status
+  448  git add images/background-image.jpeg images/meta\ image.png images/rotated-background-image.jpg 
+  449  git status
+  450  git commit -m "removed unnecessary image files."
+  451  git push origin project-polish 
+  452  git switch master
+  453  git switch project-polish
+  454  git status
+  455  git switch master
+  456  git pull origin master
+  457  git branch code-cleanup
+  458  git switch code-cleanup 
+  459  git status
+  460  git add css/styles.css index.html js/main.js 
+  461  git commit -m "removed commented out code, grouped a clickable element inside a button element."
+  462  git push origin code-cleanup 
+  463  git status
+  464  git add index.html js/main.js "fixed indentation and spacing."
+  465  git add index.html js/main.js 
+  466  git status
+  467  git commit -m "fixed indentation and spacing."
+  468  git push origin code-cleanup 
+  469  git switch master
+  470  git pull origin master
+  471  git branch buttons-clickable-icons-links
+  472  git switch buttons-clickable-icons-links 
+  473  git status
+  474  git add css/styles.css 
+  475  git commit -m "added subtle color transition for hovering over elements."
+  476  git push origin buttons-clickable-icons-links 
+  477  git status
+  478  git add css/styles.css index.html js/main.js 
+  479  git commit -m "added a loading spinner and empty search result message."
+  480  git push origin buttons-clickable-icons-links 
+  481  git status
+  482  git add css/styles.css index.html js/main.js 
+  483  git commit -m "loading spinners, empty lists and search results, and network errors."
+  484  git push origin buttons-clickable-icons-links 
+  485  git status
+  486  git add js/main.js 
+  487  git commit -m "fixed broken dom creation."
+  488  git push origin buttons-clickable-icons-links 
+  489  git switch master
+  490  git pull origin master
+  491  git status
+  492  git branch meta-description-edit
+  493  git status
+  494  git switch meta-description-edit 
+  495  git status
+  496  git add index.html 
+  497  git commit -m "edited the description of the meta element."
+  498  git push origin meta-description-edit 
+  499  git switch master
+  500  git pull origin master
+  501  cd ~/repos
+  502  ls
+  503  cd c0821-code-solutions/
+  504  git branch --list
+  505  git branch string-manipulation-3
+  506  git switch string-manipulation-3
+  507  git switch master
+  508  git branch array-manipulation-3
+  509  git switch array-manipulation-3
+  510  git switch master
+  511  cd ~/repos
+  512  ls
+  513  cd movie-journal/
+  514  git branch --list
+  515  git branch issue-6-delete-movie
+  516  git switch issue-6-delete-movie 
+  517  git status
+  518  git add css/styles.css index.html js/main.js 
+  519  git commit -m "Create an icon within a button for each card in the watchlist. #6"
+  520  git push origin issue-6-delete-movie 
+  521  git status
+  522  git add css/layout.css css/styles.css index.html js/main.js 
+  523  git commit -m "Create an event listener that displays a modal window for confirmation. #6"
+  524  git add css/layout.css css/styles.css index.html js/main.js 
+  525  git commit -m "Create an event listener that displays a modal window for confirmation. #6"
+  526  git push origin issue-6-delete-movie 
+  527  git status
+  528  git add js/main.js 
+  529  git commit -m "Ensure that clicking on either button closes it and displays the watchlist. #6"
+  530  git add js/main.js 
+  531  git commit -m "Ensure that clicking on either button closes it and displays the watchlist. #6"
+  532  git push origin issue-6-delete-movie 
+  533  git status
+  534  git add css/styles.css js/data.js js/main.js 
+  535  git commit -m "Create an event listener for the button click that removes that card DOM as a result. #6"
+  536  git push origin issue-6-delete-movie 
+  537  git status
+  538  git add css/layout.css css/styles.css 
+  539  git commit -m "Ensure that the card remains removed after reloading or view swapping. #6"
+  540  git push origin issue-6-delete-movie 
+  541  git status
+  542  git add js/main.js 
+  543  git commit -m "Remove all commented out code. #6"
+  544  git push origin issue-6-delete-movie 
+  545  git status
+  546  git switch master
+  547  cd ~/repos
+  548  ls
+  549  cd c0821-code-solutions/
+  550  git branch es6-const-let
+  551  git switch es6-const-let 
+  552  git status
+  553  git add es6-const-let/
+  554  git commit -m "Completed es6-const-let exercise."
+  555  git push origin es6-const-let 
+  556  git status
+  557  git switch master
+  558  git branch es6-template-literals
+  559  git switch es6-template-literals 
+  560  git status
+  561  git add es6-template-literals/
+  562  git commit -m "Completed es6-template-literals exercise."
+  563  git push origin es6-template-literals 
+  564  git status
+  565  git switch master
+  566  git branch es6-destructuring
+  567  git switch es6-destructuring 
+  568  git status
+  569  git add es6-destructuring
+  570  git status
+  571  git commit -m "Completed es6-destructuring exercise."
+  572  git push origin es6-destructuring 
+  573  git status
+  574  git switch master
+  575  git branch es6-arrow-functions
+  576  git switch es6-arrow-functions 
+  577  git status
+  578  git add es6-arrow-functions/
+  579  git commit -m "Completed es6-arrow-functions exercise."
+  580  git push origin es6-arrow-functions 
+  581  git status
+  582  git add es6-arrow-functions/
+  583  git commit -m "removed commented out code left behind by accident."
+  584  git push origin es6-arrow-functions 
+  585  git status
+  586  git switch master
+  587  git branch command-line-basics
+  588  git switch command-line-basics 
+  589  cd command-line-basics
+  590  pwd
+  591  man man
+  592  man cat
+  593  cat laziness.txt
+  594  cat impatience.txt
+  595  cat hubris.txt
+  596  cat laziness.txt impatience.txt hubris.txt
+  597  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  598  cat three-virtues.txt
+  599  man ls
+  600  ls
+  601  ls -a
+  602  ls -F
+  603  man ls
+  604  ls lfz-staff/
+  605  ls lfz-staff/ -a
+  606  ls -aF lfz-staff > lfz-staff/contents.txt
+  607  cat lfz-staff/contents.txt
+  608  man pwd
+  609  pwd
+  610  pwd > i-was-here.txt
+  611  ls
+  612  cat i-was-here.txt 
+  613  man echo
+  614  echo 'Hello, World!'
+  615  echo 'Hello, World!' > hello.txt
+  616  ls
+  617  cat hello.txt
+  618  man touch
+  619  touch tag-youre-it.txt
+  620  ls snoot
+  621  ls -aF snoot/
+  622  touch boop.txt > snoot/
+  623  touch boop.txt > snoot/boop.txt
+  624  ls snoot/
+  625  ls -aF snoot/
+  626  man mkdir
+  627  mkdir parent
+  628  ls
+  629  mkdir -p parent/child/grandchild
+  630  ls
+  631  ls parent
+  632  ls child
+  633  man mkdir
+  634  mkdir -p child/grandchild
+  635  ls
+  636  ls parent
+  637  ls child
+  638  touch .gitkeep > parent/child/grandchild
+  639  touch .gitkeep > parent/child/grandchild/.gitkeep
+  640  ls -a
+  641  ls parent/child/grandchild
+  642  ls parent
+  643  ls parent/child
+  644  ls parent/child/grandchild
+  645  touch .gitkeep > grandchild/
+  646  touch .gitkeep > grandchild/.gitkeep
+  647  ls
+  648  ls snoot
+  649  ls -a
+  650  ls -a parent/child/grandchild
+  651  man mv
+  652  mv pokiemans
+  653  mv pokiemans pokemon
+  654  ls
+  655  man rm
+  656  rm lol.txt
+  657  ls
+  658  rm -r kill-me/
+  659  ls
+  660  man cp
+  661  cp and-then.txt no-and-then.txt
+  662  ls
+  663  cat and-then.txt no-and-then.txt
+  664  man history
+  665  history
+  666  history > command-history.txt
