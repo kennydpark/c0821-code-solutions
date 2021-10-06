@@ -4,14 +4,14 @@ const multiply = require('./multiply');
 const divide = require('./divide');
 
 const operator = process.argv[3];
-const num1 = parseInt(process.argv[2]);
-const num2 = parseInt(process.argv[4]);
+const num1 = parseFloat(process.argv[2]);
+const num2 = parseFloat(process.argv[4]);
 if (operator === 'plus') {
-  add(num1, num2);
+  console.log('result:', add(num1, num2));
 } else if (operator === 'minus') {
-  subtract(num1, num2);
+  console.log('result:', subtract(num1, num2));
 } else if (operator === 'times') {
-  multiply(num1, num2);
+  console.log('result:', multiply(num1, num2));
 } else if (operator === 'over') {
-  divide(num1, num2);
+  console.log('result:', divide(num1, num2));
 }

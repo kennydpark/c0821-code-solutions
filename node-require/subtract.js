@@ -1,5 +1,5 @@
 function subtract(first, second) {
-  console.log('result:', first - second);
+  return first - second;
 }
 
 module.exports = subtract;
