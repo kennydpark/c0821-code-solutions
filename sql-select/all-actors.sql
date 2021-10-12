@@ -1,6 +1,3 @@
-select "actorId",
-      "firstName",
-      "lastName",
-      "updatedAt"
+select *
     from "actors"
     order by "actorId";

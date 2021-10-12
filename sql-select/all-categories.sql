@@ -1,5 +1,3 @@
-select "categoryId",
-      "name",
-      "updatedAt"
+select *
       from "categories"
       order by "categoryId";
