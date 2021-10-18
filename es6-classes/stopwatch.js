@@ -9,7 +9,7 @@ class Stopwatch {
     this.elapsedSeconds++;
   }
 
-  getTIme() {
+  getTime() {
     const secondsPerHour = 3600;
     const secondsPerMinute = 60;
     let seconds = this.elapsedSeconds;
