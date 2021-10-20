@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class CustomButton extends React.Component {
   constructor(props) {
@@ -33,7 +32,4 @@ class CustomButton extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <CustomButton />,
-  document.querySelector('#root')
-);
+export default CustomButton;
