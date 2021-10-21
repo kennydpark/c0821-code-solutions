@@ -29,7 +29,7 @@ class CustomSwitch extends React.Component {
       <div className='row'>
         <div onClick={this.handleClick} className={`switch ${state}`}></div>
         <div onClick={this.handleClick} className={toggle}></div>
-        <div className='text'>{state}</div>
+        <div onClick={this.handleClick} className='text'>{state}</div>
       </div>
     );
   }
