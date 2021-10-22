@@ -13,15 +13,7 @@
   left: 65px;
 }
 
-.fa-play {
-  font-size: 1.7rem;
-  position: relative;
-  top: 15px;
-  left: 60px;
-  cursor: pointer;
-}
-
-.fa-pause {
+.icon {
   font-size: 1.7rem;
   position: relative;
   top: 15px;

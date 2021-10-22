@@ -5,8 +5,7 @@ class CustomStopWatch extends React.Component {
     super(props);
     this.state = {
       count: 0,
-      isOn: false,
-      icon: 'fas fa-play'
+      isOn: false
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleReset = this.handleReset.bind(this);
@@ -16,25 +15,22 @@ class CustomStopWatch extends React.Component {
     if (this.state.isOn === false) {
       this.start();
       this.setState({
-        isOn: true,
-        icon: 'fas fa-pause'
+        isOn: true
       });
     } else {
       this.stop();
       this.setState({
-        isOn: false,
-        icon: 'fas fa-play'
+        isOn: false
       });
     }
   }
 
   handleReset() {
     if (this.state.isOn === false) {
-      clearInterval(this.timerID);
+      this.stop();
       this.setState({
         count: 0,
-        isOn: false,
-        icon: 'fas fa-play'
+        isOn: false
       });
     }
   }
@@ -53,12 +49,18 @@ class CustomStopWatch extends React.Component {
 
   render() {
     const count = this.state.count;
+    let iconClass;
+    if (this.state.isOn === false) {
+      iconClass = 'fas fa-play icon';
+    } else {
+      iconClass = 'fas fa-pause icon';
+    }
     return (
       <div>
         <div onClick={this.handleReset} className='face'>
           <div className='time'>{count}</div>
         </div>
-        <i onClick={this.handleClick} className={this.state.icon}></i>
+        <i onClick={this.handleClick} className={iconClass}></i>
       </div>
     );
   }
