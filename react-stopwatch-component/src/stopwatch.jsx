@@ -57,7 +57,7 @@ class CustomStopWatch extends React.Component {
       <div>
         <div onClick={this.handleReset} className='face'>
           <div className='time'>{count}</div>
-        </div>;
+        </div>
         <i onClick={this.handleClick} className={this.state.icon}></i>
       </div>
     );
