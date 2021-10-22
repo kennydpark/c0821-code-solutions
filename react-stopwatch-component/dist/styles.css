@@ -1,0 +1,30 @@
+.face {
+  border: 2px black solid;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 2rem;
+  position: relative;
+  top: 55px;
+  left: 65px;
+}
+
+.fa-play {
+  font-size: 1.7rem;
+  position: relative;
+  top: 15px;
+  left: 60px;
+  cursor: pointer;
+}
+
+.fa-pause {
+  font-size: 1.7rem;
+  position: relative;
+  top: 15px;
+  left: 60px;
+  cursor: pointer;
+}
