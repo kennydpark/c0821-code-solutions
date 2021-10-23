@@ -1,3 +1,7 @@
+p {
+  font-weight: bold;
+}
+
 .column-header-main {
   border-bottom: 2px solid rgb(240, 240, 240);
 }
@@ -142,10 +146,6 @@
 
 .clinicians-header-bottom {
   line-height: 1.8;
-}
-
-p {
-  font-weight: bold;
 }
 
 .clinicians-inner-bottom {
