@@ -7,7 +7,7 @@ function flatten(array) {
       for (var n = 0; n < arrayOfArray.length; n++) {
         flattenedArray.push(arrayOfArray[n]);
       }
-    } else if ((typeof array[i] === 'number') || (typeof array[i] === 'boolean')) {
+    } else {
       flattenedArray.push(array[i]);
     }
   }
@@ -21,6 +21,6 @@ function flatten(array) {
 //        assign that value to arrayOfArray
 //        loop through arrayOfArray
 //            add the current value to flattenedArray
-//        otherwise, if current value is a number or a boolean,
+//        otherwise,
 //            add the current value to flattenedArray
 // return flattenedArray
