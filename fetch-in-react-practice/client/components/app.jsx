@@ -92,7 +92,8 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-        const stateCopy = this.state.todos.splice((todoId - 1), 1, data);
+        let stateCopy = [];
+        stateCopy = this.state.todos.splice((todoId - 1), 1, data);
         this.setState({
           todos: stateCopy
         });
