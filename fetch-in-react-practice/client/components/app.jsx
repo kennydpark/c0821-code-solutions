@@ -89,9 +89,8 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-        let newState = [];
         this.state.todos.splice((todoId - 1), 1, data);
-        newState = this.state.todos;
+        const newState = this.state.todos.slice();
         this.setState({
           todos: newState
         });
