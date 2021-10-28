@@ -73,9 +73,7 @@ export default class App extends React.Component {
     let patch = {};
     for (var i = 0; i < this.state.todos.length; i++) {
       if (this.state.todos[i].todoId === todoId) {
-        console.log('task selected:', this.state.todos[i]);
         if (this.state.todos[i].isCompleted === false) {
-          console.log('task selected is not complete');
           patch = this.state.todos[i];
           patch.isCompleted = true;
         } else {
@@ -84,7 +82,6 @@ export default class App extends React.Component {
         }
       }
     }
-    console.log('patch:', patch);
     fetch(`/api/todos/${todoId}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
@@ -99,7 +96,6 @@ export default class App extends React.Component {
           todos: newState
         });
       });
-    console.log('state:', this.state.todos);
   }
 
   render() {
