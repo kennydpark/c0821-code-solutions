@@ -1,8 +1,9 @@
 /* exported take */
+
 function take(array, count) {
   var output = [];
-  for (var i = 0; i < array.length; i++) {
-    if (i <= (count - 1)) {
+  for (var i = 0; i < count; i++) {
+    if (array[i] !== undefined) {
       output.push(array[i]);
     }
   }
@@ -12,7 +13,7 @@ function take(array, count) {
 // input: array, count (number)
 // output: array
 // create storage for output - empty array
-// look at each item in the array one at a time
-//    if i is less than or equal to the value of count subtracted by 1,
-//        add array at i to output
+// look at each item in the array one at a time, from 0 to 'count'
+//    if the current element is not undefined,
+//        push it to 'output'
 // return output
