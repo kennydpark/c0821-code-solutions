@@ -1,0 +1,22 @@
+User can sign up.
+  - The input fields page is rendered and depending on what the action prop is, the href and text content for appropriate rendered elements.
+  - When the user enters a username and password into the input field, the data is stored in the state of the AuthForm component
+  - Submitting the form triggers the client sends a request to the server to input a new user into the database
+  - A condition is checked whether the username exists in the database or not
+  - if it does not, it inserts it into the database with a query using SQL
+  - the username is added with a hashedPassword created as well
+  - the user receives a token that is unique to that account and is needed to sign in
+User can sign in.
+  - Once the user has succesfully signed up, signing in requires an authentication
+  - The authentication is checked via fetch request and returns a match for the username and password
+  - Signing in sends the token back to the server so that the server can verify it
+  - the token is stored in the localStorage of the app and the state of the App class is updated to contain the information about the user
+  - if the token returns null when decoded, the authorizing property in the state is set to false.
+User can stay signed in (even if they refresh the page).
+  - The client sends a message containing the token that pertains to the username
+  - As long as the isAuthorizing property in the state of the App component is true, as well as the correct user for that token, the user stays signed in.
+  - The state is updated with react-context-jwt and renders the correct view for staying signed in.
+User can sign out.
+  - The token property is removed from the localStorage
+  - The state of class App is updated to set user property to null
+  - The home page is rendered for signing up/in.
